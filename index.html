@@ -49,7 +49,7 @@
         <ul class="header__list">
           <li class="header__item">
             <a class="header__link" href="mailto:info@devstudio.com">
-              <svg class="header__svg svg" width="16" height="16">
+              <svg class="header__svg svg" width="16" height="12">
                 <use href="./images/svg/symbol-defs.svg#icon-email"></use>
               </svg>
               info@devstudio.com</a
@@ -57,7 +57,7 @@
           </li>
           <li class="header__item">
             <a class="header__link" href="tel:+380961111111">
-              <svg class="header__svg svg" width="14" height="16">
+              <svg class="header__svg svg" width="10" height="16">
                 <use href="./images/svg/symbol-defs.svg#icon-tel"></use>
               </svg>
               +38 096 111 11 11</a
@@ -74,7 +74,17 @@
             Ефективні рішення для<br />
             вашого бізнесу
           </h1>
-          <button class="hero__button" type="button">Замовити послугу</button>
+          <button class="hero__button" type="button" data-modal-open>Замовити послугу</button>
+        </div>
+        <!-- modal -->
+        <div class="backdrop" data-modal>
+          <div class="modal">
+            <button class="modal__button" type="button" data-modal-close>
+              <svg class="modal__button--svg" width="11" height="11">
+                <use href="./images/svg/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -134,11 +144,15 @@
 <img class="img1" src="./images/hero/Img.jpg" alt="">
 </div> -->
 
-
-
+      <!-- граюсь з кнопкою -->
+      <!-- <div class="container">
+  <button  class="button1" type="button">
+    hello World
+  </button>
+</div> -->
 
       <!-- features -->
-         <section class="features section">
+      <section class="features section">
         <h2 class="hidden-title">особливості</h2>
         <div class="features__container container">
           <ul class="features__list">
@@ -211,6 +225,9 @@
                 width="370"
                 height="294"
               />
+              <div class="work__container">
+                <p class="work__text">Десктопні додатки</p>
+              </div>
             </li>
             <li class="work__item">
               <img
@@ -220,6 +237,9 @@
                 width="370"
                 height="294"
               />
+              <div class="work__container">
+                <p class="work__text">Мобільні додатки</p>
+              </div>
             </li>
             <li class="work__item">
               <img
@@ -229,6 +249,9 @@
                 width="370"
                 height="294"
               />
+              <div class="work__container">
+                <p class="work__text">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -506,7 +529,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <svg class="svg" width="20" height="20">
+                      <svg class="svg" width="10" height="20">
                         <use
                           href="./images/svg/symbol-defs.svg#icon-facebook-3"
                         ></use>
@@ -547,7 +570,7 @@
                 rel="noopener noreferrer"
                 aria-label="постійний клієнт нашої компанії"
               >
-                <svg class="svg" width="170" height="92">
+                <svg class="svg" width="41" height="47">
                   <use href="./images/svg/symbol-defs.svg#icon-logo"></use>
                 </svg>
               </a>
@@ -560,7 +583,7 @@
                 rel="noopener noreferrer"
                 aria-label="постійний клієнт нашої компанії"
               >
-                <svg class="svg" width="170" height="92">
+                <svg class="svg" width="40" height="52">
                   <use href="./images/svg/symbol-defs.svg#icon-logo-1"></use>
                 </svg>
               </a>
@@ -573,7 +596,7 @@
                 rel="noopener noreferrer"
                 aria-label="постійний клієнт нашої компанії"
               >
-                <svg class="svg" width="170" height="92">
+                <svg class="svg" width="43" height="41">
                   <use href="./images/svg/symbol-defs.svg#icon-logo-2"></use>
                 </svg>
               </a>
@@ -586,7 +609,7 @@
                 rel="noopener noreferrer"
                 aria-label="постійний клієнт нашої компанії"
               >
-                <svg class="svg" width="170" height="92">
+                <svg class="svg" width="84" height="40">
                   <use href="./images/svg/symbol-defs.svg#icon-logo-3"></use>
                 </svg>
               </a>
@@ -599,7 +622,7 @@
                 rel="noopener noreferrer"
                 aria-label="постійний клієнт нашої компанії"
               >
-                <svg class="svg" width="170" height="92">
+                <svg class="svg" width="62" height="45">
                   <use href="./images/svg/symbol-defs.svg#icon-logo-4"></use>
                 </svg>
               </a>
@@ -612,7 +635,7 @@
                 rel="noopener noreferrer"
                 aria-label="постійний клієнт нашої компанії"
               >
-                <svg class="svg" width="170" height="92">
+                <svg class="svg" width="93" height="43">
                   <use href="./images/svg/symbol-defs.svg#icon-logo-5"></use>
                 </svg>
               </a>
@@ -715,5 +738,8 @@
         </div>
       </div>
     </footer>
+
+  <script src="./js/modal.js"></script>
+
   </body>
 </html>
